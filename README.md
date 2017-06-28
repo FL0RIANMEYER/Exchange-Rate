@@ -36,7 +36,8 @@ Steps to install and run this project locally.
 > npm start
 ```
 
-# Front-end
+# Architecture
+## Front-end
 - React
 - Redux with state persistance
 - CSS Modules
