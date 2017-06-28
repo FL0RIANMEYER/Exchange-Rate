@@ -27,7 +27,7 @@ class App extends React.Component {
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
-
+// Check if cookie was set on initial request to transfer JWT user Auth after mail singup redirection
 const match = document.cookie.match(new RegExp('Authorization' + '=([^;]+)'));
 if(match) {
     try {
@@ -35,8 +35,6 @@ if(match) {
         document.cookie = 'Authorization=;expires=Thu, 01 Jan 1970 00:00:00 GMT';
     } catch (e) { /**/ }
 
+    // Remove validation token from query url after recieving session token from server
     window.history.replaceState( {}, '', '/');
 }
-
-console.warn = () => {};
-console.log  = () => {};

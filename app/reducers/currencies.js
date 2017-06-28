@@ -3,10 +3,10 @@ import transformCurrencies from '../transformer/currencies';
 
 
 /**
- * [treeitem description]
- * @param  {Array}  [state=[]] [description]
- * @param  {OBJECT} action     [description]
- * @return {[type]}            [description]
+ *
+ * @param  {Array}  [state=[]] 
+ * @param  {OBJECT} action     
+ * @return {[type]}            
  */
 export function currencies(state = {}, action) {
     switch (action.type) {

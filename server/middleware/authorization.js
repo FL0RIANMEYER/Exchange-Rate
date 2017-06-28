@@ -1,6 +1,10 @@
 import jwt from '../jwt';
 
-
+/**
+ * Check if token exist and is valid
+ * @param  {Object}   services
+ * @return {Function}
+ */
 export default services => async (req, res, next) => {
     const token = req.body.token ||
                   req.query.token ||

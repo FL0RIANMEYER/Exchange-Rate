@@ -2,10 +2,10 @@ import { TOGGLE_SIGNUP } from '../constants/action-types';
 
 
 /**
- * [treeitem description]
- * @param  {Array}  [state=[]] [description]
- * @param  {OBJECT} action     [description]
- * @return {[type]}            [description]
+ *
+ * @param  {Array}  [state=[]]
+ * @param  {OBJECT} action
+ * @return {[type]}   
  */
 export function signup(state = {}, action) {
     switch (action.type) {

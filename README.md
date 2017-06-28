@@ -29,7 +29,7 @@ Steps to install and run this project locally.
 > docker build -t <imageName> .
 > docker run -e HOSTNAME=<hostname> -P|(-p 443:<HTTPS_PORT> -p 80:HTTP_PORT) [-e HTTPS_PORT=443] [-e HTTP_PORT=80] -name <containerName> <imageName>
 ```
-4. Browse to /<hostname>:<HTTPS_PORT|HTTP_PORT with redirect>
+4. Browse to `<hostname>:<HTTPS_PORT|HTTP_PORT with redirect>`
 
 ### Without docker
 ```

@@ -10,6 +10,13 @@ import EventListener from './eventListener';
 import routes        from './routes';
 
 
+/**
+ * Server
+ * @param  {Number} httpsPort
+ * @param  {Number} httpPort
+ * @param  {Object} services  instances to pipe events to logic.
+ *                            But normaly events are routed through eventListener server.on
+ */
 const Server = function(httpsPort, httpPort, services) {
     const app           = express();
     const http2Server   = spdy.createServer({ key, cert }, app);

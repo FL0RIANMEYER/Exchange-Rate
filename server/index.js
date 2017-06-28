@@ -25,6 +25,9 @@ server.on('getTime-series', async ({ amount, from, to, dateFrom, dateTo }) =>
 initMemCacheTestData();
 
 
+/**
+ * Set currencies and update latest rates every day
+ */
 async function initMemCache() {
     services.memCache.setValue('currencies', await services.openExchange.getCurrencies());
     setInterval(() => {
@@ -32,6 +35,9 @@ async function initMemCache() {
     }, 24*60*60*100);
 }
 
+/**
+ * Set currencies and rates from dummy values to reduce openexchangerates.org api rate while testing
+ */
 function initMemCacheTestData() {
     // Use mocked data for development to reduce rare api requests
     const currencies = require('../test/dumyData/currencies.json');

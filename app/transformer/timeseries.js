@@ -1,4 +1,8 @@
-
+/**
+ * Transform query result to chart.js options format
+ * @param  {Array}  result response from api
+ * @return {Object}        options object for chart.js
+ */
 export default result => {
     const values = result.filter(r => !!r);
     const labels = values.map(({timestamp}) => new Date(timestamp).toISOString().split('T')[0]);

@@ -1,3 +1,10 @@
+/**
+ * Transform interval borders to congruent steps
+ * @param  {String} dateFrom             lower interval border
+ * @param  {String} dateTo               uper interval border
+ * @param  {Number} [NUMBER_OF_STEPS=10] number of congruent steps
+ * @return {Array}                       ISO Time string for each step
+ */
 export default (dateFrom, dateTo, NUMBER_OF_STEPS = 10) => {
     const start = new Date(dateFrom).valueOf();
     const end   = new Date(dateTo).valueOf();

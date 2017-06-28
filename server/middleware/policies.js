@@ -1,6 +1,10 @@
 import { freeRequests, authResuests } from '../policies';
 
-
+/**
+ * Check ratelimit is exceeded depending on user auth
+ * @param  {Object}   services
+ * @return {Function}
+ */
 export default services => (req, res, next) => {
     // trust x-forwarded only if own reverse proxy
     const ip    = req.headers['x-forwarded-for'] || req.connection.remoteAddress;

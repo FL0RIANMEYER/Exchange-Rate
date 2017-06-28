@@ -7,11 +7,6 @@ const EventListener = function() {
         eventListener[event].push(fn);
     };
 
-    this.callListeners = async (event, ...args) => {
-        if(!eventListener[event]) { return; }
-        return await Promise.race(eventListener[event].map(listener => listener(...args)));
-    };
-
     this.removeListener = (listener, event) => {
         if(event) {
             eventListener[event] = eventListener[event].filter(el => el !== listener);
@@ -20,6 +15,11 @@ const EventListener = function() {
                 eventListener[event] = eventListener[event].filter(el => el !== listener);
             }
         }
+    };
+
+    this.callListeners = async (event, ...args) => {
+        if(!eventListener[event]) { return; }
+        return await Promise.race(eventListener[event].map(listener => listener(...args)));
     };
 };
 

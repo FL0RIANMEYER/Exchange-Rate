@@ -2,10 +2,10 @@ import { TOGGLE_ADVANCED, AJAX_RESPONSE, QUERY_EXCHANGE } from '../constants/act
 
 
 /**
- * [treeitem description]
- * @param  {Array}  [state=[]] [description]
- * @param  {OBJECT} action     [description]
- * @return {[type]}            [description]
+ *
+ * @param  {Array}  [state=[]] 
+ * @param  {OBJECT} action     
+ * @return {[type]}            
  */
 export function search(state = {}, action) {
     switch (action.type) {

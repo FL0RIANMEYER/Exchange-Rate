@@ -3,7 +3,11 @@ import { AJAX_RESPONSE } from '../constants/action-types';
 
 const xmlhttp = new XMLHttpRequest();
 
-
+/**
+ * listen for actions with ajax!=undefined flag and dispatch response message
+ * @param  {[type]} dispatch
+ * @return {[type]}          
+ */
 export default ({ dispatch }) => next => action => {
     if(!action.ajax) { next(action); return; }
 

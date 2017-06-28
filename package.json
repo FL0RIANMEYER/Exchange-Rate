@@ -47,6 +47,7 @@
     "chai": "^4.0.2",
     "chai-as-promised": "^7.0.0",
     "chokidar": "^1.7.0",
+    "jsdoc-http-plugin": "^0.2.3",
     "mocha": "^3.4.2",
     "mockery": "^2.0.0",
     "prepack-webpack-plugin": "^1.1.0",
