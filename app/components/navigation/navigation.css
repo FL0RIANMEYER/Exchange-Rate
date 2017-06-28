@@ -1,0 +1,30 @@
+.navigation {
+    min-height: 43px;
+    background-color: #fff;
+    padding: 13px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navigation > div:first-child {
+    flex-grow: 1;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15%;
+    font-family: sans-serif;
+    align-self: flex-end;
+}
+
+.navigation a:last-of-type {
+    margin-left: 15%;
+    padding: 11px 32px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}

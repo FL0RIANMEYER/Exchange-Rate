@@ -1,0 +1,82 @@
+
+.container {
+    padding: 0 15%;
+    background: #2b3d51;
+    color: #fff;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.advancedSearch {
+    align-self: flex-end;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.container select, input {
+    color: #fff;
+}
+
+.container option {
+    color: #000;
+}
+
+.searchBar {
+    border: 1px solid #ddd;
+    display: flex;
+    border-radius: 0.25rem;
+
+}
+
+.advancedBar {
+    display: flex;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.expand{
+    max-height: 200px;
+}
+
+.advancedBar > div {
+    margin: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.advancedBar span {
+    border-right: 1px solid #ddd;
+}
+
+.advancedBar input {
+    border: none;
+    background-color: transparent;
+}
+
+.advancedBar > div > * {
+    padding: 10px;
+}
+
+.searchBar > * {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+}
+
+.searchBar > :not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.searchBar > input {
+    flex-grow: 1;
+}
+
+.searchBar > button {
+    cursor: pointer;
+    user-select: none;
+    fill: #ccc;
+}

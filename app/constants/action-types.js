@@ -1,0 +1,11 @@
+export const AJAX_RESPONSE = 'AJAX_RESPONSE';
+
+export const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
+
+export const QUERY_EXCHANGE  = 'QUERY_EXCHANGE';
+export const TOGGLE_ADVANCED = 'TOGGLE_ADVANCED';
+
+export const TOGGLE_SIGNUP = 'TOGGLE_SIGNUP';
+export const SIGNUP_USER   = 'SIGNUP_USER';
+
+export const SET_USER = 'SET_USER';
