@@ -4,7 +4,7 @@ There are two types of queries availabe:
 - Simple Exchange conversion from currency A -> B with the "latest" exchange rates
 - Timeseries conversion from currency A -> B with max 10 Datapoints from given time interval
 
-The exchange data is provided by [openexchange]
+The exchange data is provided by [openexchangerates.org]
 
 This App use a passwordles signup mechanism. For unregistered users are 10 overall requests free. For signedup users are 30 requests free.
 
@@ -79,5 +79,5 @@ To test this app, use the `test` script.
 ```
 
 
-[openexchange]: <https://http://openexchangerates.org/>
+[openexchangerates.org]: <http://openexchangerates.org/>
 [app]: <https://104.154.143.10/>
